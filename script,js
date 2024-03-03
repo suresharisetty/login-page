@@ -65,7 +65,7 @@ passwordInput.addEventListener("change", (e) => {
 // Form onChange event handler
 forms.addEventListener("change", (e) => {
   e.preventDefault();
-    console.log("exeucted");
+  // console.log("exeucted");
   if (emailFlag && passFlag) {
     const err = "All good to go!";
     const para = document.createElement("p");
@@ -77,7 +77,7 @@ forms.addEventListener("change", (e) => {
       passContainer.appendChild(para);
     }
   } else {
-     console.log("wrong form");
+    // console.log("wrong form");
     const para = document.getElementById("formPara");
     if (para) {
       para.remove();
